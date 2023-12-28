@@ -1,0 +1,27 @@
+.bg-dark-blue
+{
+    background-color: #072044;
+}
+ul
+{
+    list-style: none;
+}
+.footerFeature:hover
+{
+    transition: .5s;
+}
+.footerFeature:hover
+{
+    transform: translateX(7px);
+    transition: .5s;
+}
+.footerAddress
+{
+    color: #FFBC06;
+    text-decoration: none;
+}
+.footerAddress:hover
+{
+    color: #FFBC06;
+    text-decoration: underline;
+}

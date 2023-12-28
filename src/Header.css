@@ -1,0 +1,200 @@
+.fix-left a {
+    bottom: 20px;
+    right: 20px;
+    transition: .4s;
+    background-color: #2f2f2f;
+    z-index: 5;
+}
+
+.fix-left a:hover {
+    transition: .4s;
+    background-color: #FFBC06;
+}
+
+.fix-right a {
+    bottom: 20px;
+    left: 20px;
+    background-color: #FFBC06;
+    z-index: 5;
+}
+
+.fix-right .top-img {
+    bottom: 100%;
+    left: 0px;
+}
+
+.fix-right .top-img .close {
+    width: 25px;
+    bottom: 80%;
+    left: 91%;
+    display: none;
+}
+
+.fix-right .top-img:hover .close {
+    display: block;
+}
+
+
+.bg-blue {
+    background-color: #003366;
+}
+
+.topHeader {
+    transition: .3s;
+    color: #fff !important;
+    font-weight: 500;
+}
+
+a:hover .topHeader,
+.topHeader:hover {
+    transition: .3s;
+    color: #FFBC06 !important;
+}
+
+@media screen and (max-width:576px) {
+    .smallFont {
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .smallFont {
+        font-size: 14px !important;
+    }
+
+    .owl-nav {
+        display: none;
+    }
+}
+
+img {
+    /* width: 100%; */
+    display: block;
+}
+
+.headerSlider .owl-carousel {
+    height: 85vh;
+}
+
+.headerSlider .owl-stage-outer,
+.headerSlider .owl-stage,
+.headerSlider .owl-item {
+    height: inherit;
+}
+
+.headerSlider .owl-dots {
+    display: none;
+}
+
+.headerSlider .owl-nav {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: .4s;
+}
+
+.headerSlider .owl-next,
+.headerSlider .owl-prev {
+    font-size: 30px !important;
+    font-weight: bolder !important;
+    margin: 0px 50px !important;
+    background-color: rgba(0, 0, 0, .6) !important;
+    border-radius: 50% !important;
+    padding: 3px 13px !important;
+}
+
+.headerSlider:hover .owl-nav {
+    transition: .4s;
+    opacity: 1;
+}
+
+
+/* Header Responsive */
+
+.second,.third {
+    display: none;
+}
+.first li a {
+    color: #2f2f2f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+.second li a {
+    font-weight: 700;
+}
+.third li a {
+    font-weight: 500;
+}
+.first li:hover>a,
+.activeHeader {
+    color: #FFBC06 !important;
+    transition: .3s;
+}
+@media screen and (max-width:992px) {
+
+    .Open,
+    .Others {
+        display: block;
+    }
+    .first {
+        display: none;
+        width: 90%;
+        max-height: 250px !important;
+        overflow: auto;
+    }
+    .second,
+    .third {
+        position: relative;
+        right: 0%;
+        width: 95%;
+        max-height: 200px !important;
+        overflow: scroll;
+    }
+    .second ul,
+    .third li {
+        padding: 0px 25px;
+        width: 95%;
+        overflow: scroll;
+    }
+
+    .first li:hover .second,.second li:hover .third {
+        display: none;
+    }
+    .SetCDMILogo
+    {
+        scale: 1;
+    }
+}
+@media screen and (min-width:992px) {
+    .Close,
+    .Open,
+    .Others {
+        display: none;
+    }
+    .first {
+        display: flex !important;
+    }
+    .second {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+    }
+    .third {
+        position: absolute;
+        top: 0%;
+        left: 100%;
+    }
+    .first li:hover .second,.second li:hover .third {
+        display: block !important;
+    }
+    .SetCDMILogo
+    {
+        scale: 1.2;
+    }
+}

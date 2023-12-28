@@ -1,0 +1,20 @@
+.cardCreative .card .roundImg .Img .outLinePart
+{
+    transition: .1s !important;
+    border: 4px solid white;
+    scale: 1.1;
+}
+.cardCreative .card:hover .roundImg .Img .outLinePart
+{
+    transition: .1s !important;
+    scale: .9;
+}
+.cardCreative .card
+{
+    transition: .5s;
+}
+.cardCreative .card:hover
+{
+    transform: translateY(-15px);
+    transition: .5s;
+}

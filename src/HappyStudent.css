@@ -1,0 +1,50 @@
+.HappyStudent
+{
+    height: inherit !important;   
+}
+.HappyStudent .topContaint
+{
+    text-align: justify;
+    font-weight: 500;
+}
+.HappyStudent .owl-dots
+{
+    display: none;
+}
+.HappyStudent .owl-nav
+{
+    display: block;
+}
+.HappyStudent
+{
+    position: relative;
+}
+.HappyStudent .owl-nav
+{
+    position: absolute;
+    bottom: 107%;
+    right: 0;
+    margin: 0px 10px;
+}
+.HappyStudent .owl-next,.HappyStudent .owl-prev
+{
+    background-color: white !important;
+    padding: 7px 13px !important;
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    font-size: larger !important;
+    font-weight: bolder !important;
+    transition: .3s;
+}
+.HappyStudent .owl-next:hover,.HappyStudent .owl-prev:hover
+{
+    transition: .3s;
+    color: #FFBC06 !important;
+}
+.Students .quotes
+{
+    font-family: "Font Awesome 5 Free";
+    font-size: 80px;
+    color: rgba(0,0,0,0.08);
+    line-height: normal;
+    font-weight: 900;
+}

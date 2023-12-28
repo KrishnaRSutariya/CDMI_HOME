@@ -1,0 +1,28 @@
+.ourPartner .owl-nav,.ourPartner .owl-dots
+{
+    display: none;
+}
+.ourPartner
+{
+    height: inherit !important;
+}
+
+.partsHeading .h2
+{
+    font-weight: 700;
+}
+.partsHeading .h6
+{
+    position: relative;
+}
+.partsHeading .h6::after
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 105%;
+    width: 15%;
+    height: 10%;
+    background-color: #FFBC06;
+    border-radius: 20px;
+}

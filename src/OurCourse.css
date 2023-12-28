@@ -1,0 +1,69 @@
+.OurCourse .card
+{
+    transition: .4s;
+}
+.OurCourse .card:hover
+{
+    scale: 1.05;
+    transition: .4s;
+}
+.OurCourse .text-hover-effect
+{
+    color: rgba(0, 0, 0, .8) !important;
+    transition: .3s;
+}
+.OurCourse .text-hover-effect:hover
+{
+    color: #FFBC06 !important;
+    transition: .3s;
+}
+.KnowMoreBTN button
+{
+    position: relative;
+    border-radius: 5px !important;
+    background-color: #003366 !important;
+    font-weight: 500;
+    overflow: hidden;
+}
+.KnowMoreBTN button::after
+{
+    content: '';
+    width: 100%;
+    height: 25%;
+    background-color: rgba(256, 256, 256, .5);
+    position: absolute;
+    left: -75%;
+    transform: rotate(-50deg);
+    transition: .5s;
+}
+.KnowMoreBTN button:hover::after
+{
+    left: 75%;
+    transition: .5s;
+}
+
+.CourseImgCard .owl-dots
+{
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.CourseImgCard .owl-dots .active span
+{
+    background-color: #b37e02 !important;
+}
+.CourseImgCard .owl-dots span
+{
+    width: 7px !important;
+    height: 7px !important;
+    border-radius: 0px !important;
+    background-color: #FFBC06 !important;
+}
+.CourseImgCard .owl-nav
+{
+    display: none;
+}

@@ -1,0 +1,23 @@
+.course .demandCourse
+{
+    transition: .3s;
+    color: #072044;
+    text-decoration: none;
+}
+.course .demandCourse:hover
+{
+    transition: .3s;
+    background-color: #FFBC06;
+    color: #fff;
+}
+.showMore
+{
+    transition: .3s;
+    color: #072044;
+    cursor: pointer;
+}
+.showMore:hover
+{
+    transition: .3s;
+    color: #FFBC06;
+}

@@ -1,0 +1,214 @@
+.CreativeVideo .col-12 .FullImgVideo {
+    position: relative;
+}
+
+.CreativeVideo .col-12 .FullImgVideo .layer {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 50, 100, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.CreativeVideo .PlayBtnVideo {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    background-color: #fff;
+    padding: 7px 13px 12px 15px;
+    border-radius: 50%;
+    color: #FFBC06;
+    font-size: x-large;
+}
+
+.CreativeVideo .PlayBtnVideo::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    animation: mymove;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+.CreativeVideo .PlayBtnVideo::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    animation: mymove;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mymove {
+    0% {
+        outline: 0px solid rgba(256, 256, 256, .3);
+    }
+
+    10% {
+        outline: 2px solid rgba(256, 256, 256, .3);
+    }
+
+    20% {
+        outline: 4px solid rgba(256, 256, 256, .3);
+    }
+
+    30% {
+        outline: 6px solid rgba(256, 256, 256, .3);
+    }
+
+    40% {
+        outline: 8px solid rgba(256, 256, 256, .3);
+    }
+
+    50% {
+        outline: 10px solid rgba(256, 256, 256, .3);
+    }
+
+    60% {
+        outline: 12px solid rgba(256, 256, 256, .3);
+    }
+
+    70% {
+        outline: 14px solid rgba(256, 256, 256, .3);
+    }
+
+    80% {
+        outline: 16px solid rgba(256, 256, 256, .3);
+    }
+
+    90% {
+        outline: 18px solid rgba(256, 256, 256, .3);
+    }
+
+    100% {
+        outline: 20px solid rgba(256, 256, 256, .3);
+    }
+}
+
+
+.VideoContaint {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 500px 500px 0px;
+    scale: 1.2;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    text-align: justify !important;
+}
+
+.VideoContaint .text-secondary {
+    font-size: 13px !important;
+    font-weight: 500;
+}
+
+.EnrollNowBTN button {
+    position: relative;
+    border-radius: 5px !important;
+    background-color: #FFBC06 !important;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.EnrollNowBTN button:hover {
+    background-color: #DF9C00 !important;
+}
+
+.EnrollNowBTN button::after {
+    content: '';
+    width: 100%;
+    height: 25%;
+    background-color: rgba(256, 256, 256, .5);
+    position: absolute;
+    /* top: -50%; */
+    left: -75%;
+    transform: rotate(-50deg);
+    transition: .5s;
+}
+
+.EnrollNowBTN button:hover::after {
+    left: 75%;
+    transition: .5s;
+}
+
+@media screen and (max-width:575px) {
+    .VideoContaint {
+        scale: 1.2 !important;
+        border-radius: 0px 0px 250px 250px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:677px) {
+    .VideoContaint {
+        scale: 1.2 !important;
+        border-radius: 0px 0px 250px 250px;
+    }
+}
+
+@media screen and (min-width:678px) and (max-width:991px) {
+    .VideoContaint {
+        scale: 1.2 !important;
+        border-radius: 0px 0px 250px 250px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .VideoContaint {
+        scale: 1.2 !important;
+        /* border-radius: 0px !important; */
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1399px) {
+    .VideoContaint {
+        scale: 1.2 !important;
+        /* border-radius: 0px !important; */
+    }
+}
+
+@media screen and (min-width:1400px) and (max-width:1599px) {
+    .VideoContaint {
+        scale: 1.2 !important;
+        /* border-radius: 0px !important; */
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .VideoContaint {
+        scale: 1.2 !important;
+        /* border-radius: 0px !important; */
+    }
+}
+
+/* YouTube Parts */
+
+.youtubePart {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.CloseBtn {
+    color: rgba(256, 256, 256, 0.5);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.CloseBtn:hover {
+    transition: .3s;
+    color: white;
+}
